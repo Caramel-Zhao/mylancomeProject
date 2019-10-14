@@ -1,0 +1,224 @@
+/* footer */
+.footer-companion{
+  background: #000;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+  border-bottom: 1px solid #333;
+}
+.footer-companion>h1{
+  padding-top: 44px;
+  font-size: 22px;
+  line-height: 24px;
+}
+.footer-companion ul{
+  font-size: 0;
+  margin: 52px auto;
+  max-width: 1330px;
+  display: flex;
+  justify-content: space-around;
+}
+.footer-companion ul>li{
+  /* display: inline-block; */
+  vertical-align: top;
+}
+.footer-companion ul>li h3{
+  font-size: 14px;
+  line-height: 16px;
+  margin: 13px 0 10px;
+}
+.footer-companion ul>li p{
+  font-size: 14px;
+  line-height: 18px;
+  color: #999;
+  margin: 0;
+  text-align: center;
+}
+
+
+/* footer-guide */
+.footer-guide{
+  padding: 54px 180px 52PX;
+  position: relative;
+  color: #fff;
+  background: #000;
+  
+}
+.footer-guide>ul{
+  display: flex;
+  padding-right: 80px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer-guide>ul>li h3{
+  font-size: 14px;
+  line-height: 16px;
+  padding: 0;
+  color: #fff;
+}
+.footer-guide>ul>li a,.footer-guide>ul>li p{
+  color: #999;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.icon{
+  display: inline-block;
+  background-image: url(../img/icon.png);
+}
+
+.icon-mail{
+  background-position: -48px -273px;
+  width: 21px;
+  height: 16px;
+}
+
+.icon-footer-weixin{
+  background-position: -245px -273px;
+  width: 18px;
+  height: 14px;
+}
+
+.icon-footer-weibo{
+  background-position: -221px -273px;
+  width: 18px;
+  height: 14px;
+}
+
+/* 显示二维码 */
+.out-wechat{
+position: relative;
+}
+.wechat{
+width: 94px;
+height: 94px;
+display: none;
+position: absolute;
+top: -3px;
+left: 88px;
+}
+.wechat::after{
+content: '';
+width: 0;
+height: 0;
+overflow: hidden;
+border-style: solid;
+border-width: 7px;
+border-color: transparent #fff transparent transparent;
+position: absolute;
+top: 8px;
+left: -12px;
+}
+
+
+.footer-select>p{
+  font-size: 14px;
+  line-height: 16px;
+  margin: 37px 0 13px;
+}
+
+.footer-select>p>i{
+  vertical-align: middle;
+  margin: -4px 6px 0 0;
+}
+
+.form-input.email{
+  position: relative;
+  width: 234px;
+}
+
+.footer-bottom-input{
+  background: 0 0;
+  border: 1px solid #b3b3b3;
+  font-size: 14px;
+  color: #999;
+  width: 100%;
+  height: 30px;
+  padding: 3px 57px 4px 12px;
+}
+
+.e-footer-mail-btn{
+  position: absolute;
+  right: 0;
+  top: 5px;
+  background: 0 0;
+  width: 54px;
+  height: 20px;
+  color: #fff;
+  font-size: 14px;
+  border: 0;
+  border-left: 1px solid #b3b3b3;
+  cursor: pointer;
+}
+
+
+.footer-container{
+  text-align: center;
+  padding: 30px;
+}
+
+.footer-container>.statement{
+  font-size: 0;
+  margin-bottom: 21px;
+}
+
+.statement>li{
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+.statement>li .icon {
+  margin-right: 7px;
+}
+
+.statement span{
+  font-size: 12px;
+  color: #000;
+}
+
+.icon-footer-zggs {
+  background-position: -95px -301px;
+  width: 17px;
+  height: 17px;
+}
+
+.icon-footer-hgyab {
+  background-position: -24px -273px;
+  width: 18px;
+  height: 20px;
+}
+
+.con-content>ul{
+  font-size: 0;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.con-content>ul>li{
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 6px;
+  position: relative;
+}
+
+.con-content>ul>li:first-child {
+  padding-left: 0;
+}
+
+.con-content>ul>li>a {
+  font-size: 12px;
+  color: #999;
+}
+
+.con-content>p {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.con-content>p>a{
+  color: #999;
+  text-decoration: underline;
+}

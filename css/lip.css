@@ -1,0 +1,359 @@
+.goods-con-right {
+  float: left;
+  width: 50%;
+  position: relative;
+  padding: 90px 0 0 6.5%;
+}
+
+.product-detail-container {
+  position: relative;
+}
+
+.lipstick-color-box {
+  margin-top: 30px;
+}
+
+.lipstick-color-panal {
+  min-height: 51px;
+  max-height: 102px;
+  overflow: hidden;
+  position: relative;
+  margin-top: 36px;
+  padding: 0 44px;
+}
+
+.swiper-container {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.detail-swiper-wrapper {
+  width: 451px;
+}
+
+.detail-swiper-slide {
+  margin: 0 0 6px;
+  cursor: pointer;
+  float: left;
+  width: 56.375px;
+}
+
+.detail-swiper-slide .panal-box {
+  margin: 0 9px;
+  height: 100%;
+  padding-bottom: 7px;
+}
+
+.detail-swiper-slide .panal-box.is-active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: #000;
+}
+
+.detail-swiper-slide .panal-box span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  padding-top: 100%;
+  border-radius: 50%;
+}
+
+.select-box {
+  margin-top: 30px;
+}
+
+.select-box .dropdown.select-color-dropdown {
+  width: 61%;
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown.custom-dropdown .btn {
+  min-width: 0;
+  height: 48px;
+  line-height: 48px;
+  padding: 0 20px;
+  text-align: left;
+  border: 1px solid #dadada;
+  color: #000;
+  background: #fff;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.dropdown.select-color-dropdown .btn .dropdown-text {
+  font-size: 0;
+  display: block;
+  padding-right: 14px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.dropdown.select-color-dropdown .btn .dropdown-text .dropdown-text-block {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.dropdown.select-color-dropdown .btn .dropdown-text span {
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.dropdown-icon {
+  display: block;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+  cursor: pointer;
+}
+
+.btn span i.icon-caret {
+  background-position: -209px -174px;
+  width: 15px;
+  height: 7px;
+  border: 0;
+  background-image: url(../img/icon.png);
+}
+
+
+.dropdown.custom-dropdown .sub-menu {
+  padding: 0;
+  z-index: 5;
+  width: 100%;
+  position: absolute;
+  top: -202px;
+  border: 1px solid #dadada;
+}
+
+.dropdown.custom-dropdown .sub-menu .viewport {
+  height: auto;
+  max-height: 200px;
+  overflow: auto;
+  position: relative;
+}
+
+.tinyscrollbar .overview {
+  margin-left: 0;
+  position: relative;
+  margin-top: 0;
+}
+
+.tinyscrollbar.sub-menu li {
+  cursor: pointer;
+  display: block;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.dropdown.custom-dropdown .sub-menu .viewport li a {
+  height: 48px;
+  line-height: 48px;
+  padding: 0 20px;
+  color: #999;
+}
+
+.dropdown.select-color-dropdown .sub-menu li a .colorblock {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0;
+  font-size: 14px;
+}
+
+.dropdown.select-color-dropdown .sub-menu li a span {
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.select-box .dropdown.select-size-dropdown {
+  width: 36%;
+  float: right;
+  position: relative;
+}
+
+.lipstick-buy-box {
+  margin-top: 30px;
+}
+
+.container .article .panal-box {
+  position: relative;
+}
+
+.lipstick-buy-box .panal-box .left-box {
+  float: left;
+  width: 20%;
+}
+
+.lipstick-buy-box .panal-box .left-box .product-price {
+  font-size: 18px;
+  line-height: 48px;
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 700;
+}
+
+
+.lipstick-buy-box .panal-box .right-box {
+  float: right;
+  width: 80%;
+  overflow: hidden;
+}
+
+.lipstick-buy-box .panal-box .right-box .btn {
+  width: 46%;
+  float: left;
+  margin-left: 4%;
+  height: 48px;
+  line-height: 48px;
+  color: #fff;
+  background: #000;
+  text-align: center;
+}
+
+.lipstick-buy-box .panal-box .right-box .btn.none {
+  display: none;
+}
+
+
+.product-detail-container .free-lettering-box {
+  margin-top: 30px;
+  padding: 30px;
+  background-color: #fcf3f8;
+}
+
+.product-detail-container .free-lettering-box .lettering-txt {
+  position: relative;
+  padding-left: 28px;
+  line-height: 20px;
+}
+
+.product-detail-container .free-lettering-box .lettering-txt a {
+  cursor: pointer;
+}
+
+.product-detail-container .free-lettering-box .lettering-txt a i {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.form-checkbox .icon-checkbox {
+  background-position: -197px -241px;
+  width: 20px;
+  height: 20px;
+}
+
+.form-checkbox.is-active .icon-checkbox {
+  background-position: -235px -207px;
+}
+
+label.form-checkbox.is-active .icon-checkbox {
+  background-image: url(../img/checkbox-border@2x.png);
+  background-position: 0 0;
+  background-size: 100%;
+}
+
+.product-detail-container .free-lettering-box .lettering-txt a span {
+  color: #d22153;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.product-detail-container .free-lettering-box .lettering-detail {
+  font-size: 14px;
+  line-height: 22px;
+  padding-left: 28px;
+  margin-top: 10px;
+}
+
+
+.product-detail-container .product-introduction-box {
+  margin-top: 30px;
+  line-height: 24px;
+}
+
+.product-detail-container .product-introduction-box .product-prop-txt {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 8px 0;
+}
+
+
+.product-detail-container .product-collection {
+  margin-top: 30px;
+}
+
+.product-detail-container .product-collection .add-collection {
+  color: #000;
+  cursor: pointer;
+}
+
+.product-detail-container .product-collection .add-collection i {
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(../img/icon.png);
+  background-position: -258px -325px;
+  width: 14px;
+  height: 12px;
+}
+
+.product-detail-container .product-collection .add-collection span {
+  font-size: 14px;
+  color: #000;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+  text-decoration: underline;
+}
+
+
+.product-detail-container .product-ser-box {
+  margin-top: 40px;
+}
+
+.product-detail-container .product-ser-box ul {
+  font-size: 0;
+  letter-spacing: 0;
+  border-right: 1px solid #dadada;
+}
+
+.product-detail-container .product-ser-box ul li {
+  display: inline-block;
+  vertical-align: top;
+  width: 33.333%;
+  text-align: center;
+  border-left: 1px solid #dadada;
+  font-size: 14px;
+}
+
+.product-detail-container .product-ser-box ul li img {
+  height: 40px;
+}
+
+.product-detail-container .product-ser-box ul li p {
+  margin-top: 12px;
+}
+
+#sizecount>li {
+  padding-left: 0;
+}

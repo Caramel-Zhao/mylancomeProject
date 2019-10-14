@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2013-9-30: Created.
+-->
+<svg>
+<metadata>
+Created by iconfont
+</metadata>
+<defs>
+
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    ascent="896"
+    descent="-128"
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="star" unicode="&#59577;" d="M512 159.146667l263.68-159.146667-69.973333 299.946667 232.96 201.813333-306.773333 26.026667-119.893333 282.88-119.893333-282.88-306.773333-26.026667 232.96-201.813333-69.973333-299.946667z"  horiz-adv-x="1024" />
+
+    
+
+
+  </font>
+</defs></svg>

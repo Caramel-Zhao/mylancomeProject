@@ -1,0 +1,207 @@
+
+/* banner */
+.banner{
+    position: relative;
+    margin-bottom: 80px;
+}
+#warp img {
+    /* width: 100%;
+    height: 408.2px; */
+    display: block;
+}
+
+#warp {
+    /* width: 700%; */
+    display: flex;
+    position: absolute;
+    /* top: -16px; */
+    /* left: -500px; */
+}
+
+#con {
+    width: 100%;
+    height: 412.5px;
+    /* max-height: calc(100vh - 140px); */
+    position: relative;
+    overflow: hidden;
+}
+
+.point {
+    text-align: center;
+    margin: 0;
+}
+
+.point li {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid #999;
+    background: #999;
+    cursor: pointer;
+    margin: 0 2px 0;
+}
+
+.point li.active {
+    border: 1px solid #333;
+    background: #333;
+}
+
+#left,
+#right {
+    position: absolute;
+    top: 120px;
+    width: 54px;
+    height: 108px;
+    cursor: pointer;
+    display: none;
+}
+
+#left {
+    left: 15%;
+}
+
+#right {
+    right: 15%;
+}
+
+.modular a{
+    text-decoration: none!important;
+}
+/* 当季产品模块 */
+.recommend{
+    max-width: 1400px;
+    margin: 0 auto 100px;
+    text-align: center;
+}
+.recommend>h2{
+    text-align: center;
+    font-size: 38px;
+    line-height: 40px;
+    margin-bottom: 30px;
+    color: #000;
+    font-weight: normal;
+}
+.goods-items .item{
+    /* width: 33.3333%; */
+    height: 100%;
+    padding: 0 17px;
+}
+
+
+/* item-box */
+.btn-black {
+    color: #fff;
+    background: #000;
+}
+.btn-black:hover{
+    color: #fff;
+    background-color: #eb0044;
+}
+.details-box{
+    text-align: center;
+}
+.details-box>a{
+    color: #000;
+}
+.img-box>a>img{
+    width: 432.66px;
+    height: 432.66px;
+}
+.details-box h3{
+    padding: 18px 0 10px;
+    font-size: 26px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    min-height: 54px;
+    font-weight: normal;
+}
+.details-box p{
+    padding: 0 0 15px;
+    margin: 0;
+    font-size: 17px;
+    line-height: 18px;
+    min-height: 20px;
+    color: #666;
+    text-align: center;
+}
+.goods-price{
+    font-size: 20px;
+    line-height: 20px;
+    min-height: 20px;
+    font-weight: 700;
+    display: inline-block;
+    padding: 0 0 14px;
+}
+.goods-handle .goods-btn{
+    min-width: 100px;
+    width: 110px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.goods-con{
+    width: 100%;
+    height: 602.66px;
+    position: relative;
+    overflow: hidden;
+}
+.goods-wrap{
+    white-space:nowrap;
+    position: absolute;
+    font-size:0;
+}
+.goods-wrap .item{
+    display: inline-block;
+    /* vertical-align:bottom; */
+}
+
+/* 超品周明星模块 */
+.recommend.star{
+    text-align: center;
+    padding: 0 17px;
+    margin-bottom: 30px;
+}
+.recommend.star h3,p{
+    text-align: left;
+}
+.recommend.star h3{
+    font-size: 30px;
+    line-height: 34px;
+    color: #000;
+    padding: 30px 0 10px;
+}
+.recommend.star p{
+    font-size: 16px;
+    line-height: 20px;
+    color: #666;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+/* 官网服务独有样式 */
+.goods-items.serves h2{
+    font-size: 38px;
+}
+.goods-items.serves h3{
+    font-size: 28px;
+}
+.goods-items.serves p{
+    font-size: 17px;
+}
+.goods-items.serves img{
+    height: 390.58px;
+}
+
+.serves-item{
+    float: left;
+    margin: 0 17px;
+}

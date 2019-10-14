@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cart</title>
+  <link rel="stylesheet" href="./css/reset1.css">
+  <link rel="stylesheet" href="./css/cart.css">
+</head>
+
+<body>
+  <div id="wrapper">
+    <header class="header-simple">
+      <div class="headerbar-account">
+        <a href="/" title="">
+          <i class="icon icon-simple-logo none-sm"></i>
+          <i class="icon icon-simple-logo-m none block-sm"></i>
+        </a>
+      </div>
+    </header>
+    <style type="text/css">
+      .circle {
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+      }
+    </style>
+    <!-- 内容部分 -->
+    <section class="container">
+      <!-- 模块一 -->
+      <article class="article article-width">
+        <!--购物车 title -->
+        <div class="go-shopping">
+          <a style="color: #000; font-size: 14px;" href="#" class="event-continueshopping">
+            <span class="none-sm">&lt;继续购物</a> </div>
+        <h1 class="shopping-title">我的购物袋 (<span id="cart-num"></span>)</h1>
+        <!--商品内容 -->
+        <div class="shoppingcart-box float-clearfix">
+          <div class="shoppingcart-container">
+            <!--左侧 内容 -->
+            <div class="cart-left-box events-check-box">
+              <div class="shopcart-list-title">
+                <label class="form-checkbox form-checkbox-cart is-active e-checkbox-cart-all">
+                  <i class="icon icon-checkbox-white-border"></i>
+                </label>
+                <div class="shopcart-list-leftimg">
+                  <p class="events-check-all">全选</p>
+                </div>
+                <div class="shopcart-list-right float-clearfix none-sm">
+                  <div class="shopcart-goods">商品信息</div>
+                  <div class="shopcart-unit-price">单价</div>
+                  <div class="shopcart-qty">数量</div>
+                  <div class="shopcart-sum">小计</div>
+                </div>
+              </div>
+              <div class="cart-content">
+                <div class="event-content">
+                  <!-- 是否刻字商品 -->
+                  <!-- 是否蜜享盒商品 -->
+                  <!-- 试用装商品 -->
+
+                </div>
+
+                <!--  -->
+                <div class="shoppingcart-use-box e-shoppingcart-cms-promotion">
+                  <div class="shopping-use-content"><span class="titles">官网尊享</span>
+                    <div class="users-content">
+                      <div class="promotion-box ">
+                        <div class="activity-cont">
+                          <h5>官网购物 臻享多重好礼</h5><br>
+                          <span>1-9.28-10.19期间,全场任意购买正装后，双十一期间回购任意正装，再加赠水份缘凝霜15ml</span>
+                          <span>2-全场任购正装（不含套装），即赠明星5件礼（任选5件）；</span>
+                          <span>3-新客首次购买满520元，即享星品新人礼；</span>
+                          <span>*结算时使用现金抵扣券，将不同享官网任意活动促销代码。</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!--促销代码-->
+                <div class="shoppingcart-use-box">
+                  <div class="shopping-use-content">
+                    <span class="titles">促销代码</span>
+                    <div class="users-content float-clearfix">
+                      <div class="salescode-box">
+                        <div class="form-input is-focus event-coupon-box">
+                          <input type="textbox" id="coupon" maxlength="" placeholder="" value="">
+                        </div>
+                        <a class="btn btn-black event-usecoupon">提交</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <!--送礼服务-->
+                <div class="shoppingcart-use-box">
+                  <div class="shopping-use-content gift-services-content">
+                    <span class="titles">您是否需要免费送礼服务？</span>
+                    <div class="check-box">
+                      <label id="cardChoose" class="form-checkbox e-checkbox-cart">
+                        <i class="icon icon-checkbox-border"></i>
+                      </label>是
+                    </div>
+                    <p id="cardTipsInfo" class="tips-text">选择免费送礼服务，兰蔻将提供专属祝福卡片和礼品包装服务，随附礼品收据不显示价格。
+                    </p>
+                    <div class="users-content">
+                      <div class="gift-services-box">
+                        <div class="activity-cont">
+                          <p class="title">添加卡片赠言（可选）</p>
+                          <p class="text">可在下方输入框写上您的祝福。如不需要，将为您提供空白祝福卡。如需多个礼盒，请备注数量。</p>
+                          <div class="form-input is-focus">
+                            <input id="cardTextInfo" type="" maxlength="30" placeholder="输入祝福语（30字以内）" value="">
+                            <br> <a class="btn btn-black events-submit-cardInfo">提交</a>
+                          </div>
+                        </div>
+                        <div class="message-infro float-clearfix none">
+                          <div id="message-text" style="white-space: pre" class="message-text"></div>
+                          <br>
+                          <div class="message-edit">
+                            <a style="height: 35px; line-height: 35px; min-width: 105px; top: 0;"
+                              class="btn  btn-black events-submit-card">修改</a>
+                          </div>
+                        </div>
+                        <p id="spe_Info" style="margin-bottom: 13px; color: #da1b1b; letter-spacing: .7px;"
+                          class="text">特殊字符只能包含.,-_!@:#&</p>
+                        <input type="hidden" id="cardHiddenInfo" name="cardHiddenInfo" value=""> <input type="hidden"
+                          id="cardHiddenNeedInfo" name="cardHiddenInfo" value="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--订单总价-->
+                <div class="shoppingcart-use-box">
+                  <div class="shopping-use-content">
+                    <span class="titles">订单总价</span>
+                    <div class="users-content float-clearfix">
+                      <div class="orderprice-box">
+                        <p>
+                          商品价格 <span>¥<span class="goods-sub-total">0</span></span>
+                        </p>
+                        <p>
+                          优惠金额 <span> ¥0</span>
+                        </p>
+                        <p>
+                          运费 <span>¥0</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--结算-->
+                <div class="total-box float-clearfix">
+                  <p class="price-all">
+                    总价 <span>¥<span class="goods-total">0</span></span>
+                  </p>
+                  <div class="immediately-go">
+                    <a class="mob-goshopping event-continueshopping" href="javascript:void(0);"> <span
+                        class="none-sm">&lt;</span>继续购物</a>
+                    <a class="btn btn-black none-sm event-checkout buy-now">立即结算</a>
+                    <a href="tel:400-820-8016" class="mob-service none block-sm">
+                      <i class="icon icon-checkout-customer-service"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 右侧 结算 -->
+            <div class="cart-right-box none-sm">
+              <div class="cart-order-all">
+                <h3>订单总结</h3>
+                <a class="btn btn-pink event-checkout buy-now">立即结算</a>
+                <div class="cart-price">
+                  <p>
+                    商品价格 <span>¥<span class="goods-sub-total">0</span></span>
+                  </p>
+                  <p>
+                    优惠金额 <span>¥0</span>
+                  </p>
+                  <p>
+                    运费 <span>¥0</span>
+                  </p>
+                  <p>
+                    总价 <span>¥<span class="goods-total">0</span></span>
+                  </p>
+                </div>
+              </div>
+              <div class="online-service">
+                <h3>客服中心</h3>
+                <p>如有任何问题，请联系我们</p>
+                <p>400-820-8016</p>
+                <a class="btn btn-black showOulaiya">在线客服</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <footer class="footer-simple none-sm">
+      <div class="footer-simple-viation float-clearfix">
+        <div class="viation-items">
+          <p class="items-title">
+            <i class="icon icon-simple-lock"></i>安全支付保障
+          </p>
+          <p>安全支付系统采用SSL加密。</p>
+          <p class="alipay-way">
+            <i class="icon icon-simple-alipay"></i> <i class="icon icon-simple-wepay"></i> <i
+              class="icon icon-simple-unionpay"></i>
+          </p>
+        </div>
+        <div class="viation-items">
+          <p class="items-title">
+            <i class="icon icon-simple-phone"></i>联系我们
+          </p>
+          <p>如果您有任何问题，</p>
+          <p>希望得到进一步咨询，</p>
+        </div>
+        <div class="viation-items">
+          <p class="items-title">
+            <i class="icon icon-simple-gift"></i>您的特殊礼遇
+          </p>
+          <p>首款好礼</p>
+          <p>首次购物可获赠</p>
+          <p>免费礼品小样</p>
+        </div>
+        <div class="viation-items">
+          <p class="items-title">
+            <i class="icon icon-simple-clock"></i>全国配送
+          </p>
+          <p>快递可至全国各地</p>
+          <p>快递2至6日</p>
+          <p>正常送达全国</p>
+        </div>
+        <div class="viation-items">
+          <p class="items-title">
+            <i class="icon icon-simple-chat"></i>需要帮助？
+          </p>
+          <p>我们在线客服人员将帮助您在线选购商品</p>
+          <p>
+            <a class="showOulaiya" title="在线咨询">在线咨询</a>
+          </p>
+          <p>（周一至周日9:00-21:00）</p>
+          <p>客服热线：400-820-8016</p>
+          <p>（周一至周日9:00-21:00）</p>
+        </div>
+      </div>
+
+      <div class="footer-container">
+        <ul class="statement">
+          <li class="none-sm"><span>© L’Oreal China 欧莱雅（中国）有限公司版权所有</span>
+          </li>
+          <li><i class="icon icon-footer-zggs"></i> <a target="_blank"
+              href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&entyId=2012041023233378" rel="nofollow">
+              <span>中国工商</span>
+            </a><span>&nbsp;&nbsp;</span>
+            <a target="_blank" href="http://www.miibeian.gov.cn" rel="nofollow"> <span>沪ICP备08100043号-34</span>
+            </a>
+
+          </li>
+          <li><i class="icon icon-footer-hgyab"></i> <a target="_blank"
+              href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010602001526" rel="nofollow">
+              <span>沪公网安备 31010602001526号</span>
+            </a></li>
+          <li class="none block-sm"><span>© L’Oreal China
+              欧莱雅（中国）有限公司版权所有</span></li>
+        </ul>
+        <div class="con-content">
+          <ul>
+            <li><a target="_blank" href="http://policy.lorealchina.com/termsofusewebsite" rel="nofollow">使用条款</a></li>
+            <li><a target="_blank" href="http://policy.lorealchina.com/cookiespolicy" rel="nofollow">Cookies政策</a></li>
+            <li><a target="_blank" href="http://policy.lorealchina.com/privacypolicy" rel="nofollow">隐私政策</a></li>
+          </ul>
+          <p class="none-sm">
+            浏览该网站表示您接受并同意我们使 用cookies为您提供个性化的浏览体验。点击<a target="_blank"
+              href="http://policy.lorealchina.com/cookiespolicy" rel="nofollow">Cookies政策</a>了解详情
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/cart.js"></script>

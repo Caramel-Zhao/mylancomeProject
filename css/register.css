@@ -1,0 +1,290 @@
+.register-dialog-opacity {
+  background-color: rgba(0,0,0,.68);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-login-dialog.register-lancome-dialog{
+  display: none;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.register-login-dialog .register-dialog{
+  z-index: 5;
+  border-radius: 0;
+  padding: 0;
+  background-color: #fff;
+  height: auto;
+  border: 0;
+  width: 886px;
+  box-sizing: border-box;
+}
+.register-dialog .register-dialog-container {
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+}
+.register-login-dialog.register-lancome-dialog .register-dialog .register-dialog-container {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.register-login-dialog.register-lancome-dialog .register-dialog .register-dialog-container .promotion {
+  line-height: 32px;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  background: #d51b51;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  margin-top: 0;
+  box-sizing: border-box;
+}
+.register-login-dialog .register-dialog .register-dialog-container .login-register-container .register-tab-container .register-tab-cont{
+  width: 100%;
+  float: none;
+  margin: 0;
+  font-size: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.register-login-dialog .register-dialog .register-dialog-container .login-register-container .register-tab-container{
+  padding: 56px 70px 46px;
+  box-sizing: border-box;
+}
+
+.register-login-dialog .register-form-group {
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+
+.register-login-dialog .register-items .register-form-group{
+  width: 50%;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+.register-login-dialog .register-items .register-form-group.padd-right{
+  padding-right: 30px;
+}
+.register-items .register-form-group.padd-left{
+  padding-left: 30px;
+}
+
+.register-login-dialog .control-label {
+  display: inline-block;
+  zoom: 1;
+  margin-bottom: 2px;
+  box-sizing: border-box;
+}
+
+.register-items .register-form-group .control-label{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 78px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.register-login-dialog .register-form-group .register-form-input {
+  position: relative;
+}
+
+.register-login-dialog .register-form-group .register-form-input.is-error input{
+  border-color: #f00;
+}
+.register-login-dialog .register-form-group .register-form-input.is-error .msg-block{
+  display: block;
+  font-size: 12px;
+  color: #f00;
+}
+
+
+.register-login-dialog .register-items .register-form-group .register-form-input{
+  padding-left: 87px;
+  box-sizing: border-box;
+}
+.register-login-dialog .register-form-group .register-form-input input {
+  width: 100%;
+  padding: 5px 9px;
+  box-sizing: border-box;
+  height: 40px;
+  border: 1px solid #ccc;
+}
+
+.register-form-group.padd-left .control-label{
+  left: 30px;
+}
+
+.input-box{
+  float: left;
+}
+.register-login-dialog .register-form-group.verification-code-group .register-form-input .btn-group {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 148px;
+  height: 40px;
+}
+.register-login-dialog .register-form-group.verification-code-group .register-form-input .btn-group .code{
+  font-size: 24px;
+  width: 78px;
+  height: 40px;
+  margin: 0 7px;
+  float: left;
+}
+.register-form-input .btn-group span {
+  display: block;
+  float: left;
+}
+.register-form-input .btn-group span.text {
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 20px;
+  display: block;
+}
+.register-form-input .btn-group span a {
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 20px;
+  display: block;
+  color: #000;
+  text-decoration: underline;
+}
+.register-login-dialog .register-form-group.verification-code-group .register-form-input {
+  padding-right: 148px;
+}
+.register-login-dialog .register-form-group.message-verification-group .register-form-input {
+  padding-right: 87px;
+}
+
+.register-form-input>div .verification-box.e-verification {
+  display: block;
+  width: 78px;
+  min-width: 78px;
+  height: 40px;
+  margin-left: 9px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #fff;
+  background: #000;
+  overflow: hidden;
+  text-align: center;
+  white-space: normal;
+  font-size: 14px;
+  padding: 0 20px;
+  line-height: 40px;
+}
+
+.register-login-dialog .register-items .register-form-group.remeberMe{
+  padding-left: 19px;
+  width: 100%;
+  display: block;
+  margin-bottom: 0;
+  padding-right: 10px;
+}
+
+.remeberMe i {
+  vertical-align: middle;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  margin-top: 2px;
+}
+
+.icon-checkbox-gray-border {
+  background-position: -246px -301px;
+  width: 15px;
+  height: 15px;
+}
+
+.remeberMe.is-active .icon-checkbox-gray-border{
+  background-position: -267px -301px;
+}
+
+.remeberMe>span {
+  font-size: 14px;
+  line-height: 19px;
+  display: block;
+  color: #8c8c8c;
+}
+.remeberMe>span a{
+  text-decoration: underline;
+  color: #8c8c8c;
+}
+
+.register-container .register-tab-continer .register-items .btn-box{
+  margin: 20px 0;
+}
+
+.register-container .register-tab-continer .register-items .btn-box .registerProject{
+  min-width: 266px;
+  color: #fff;
+  background: #000;
+  transition: all .2s ease-in-out;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  white-space: normal;
+  vertical-align: middle;
+  font-size: 14px;
+  padding: 0 20px;
+  border: 0;
+  margin: 0;
+  height: 42px;
+  line-height: 42px;
+}
+
+
+.register-container .register-tab-continer .register-items .register-change{
+  width: 100%;
+}
+
+.register-container .register-tab-continer .register-items .register-change a{
+  display: inline-block;
+  font-size: 16px;
+  line-height: 24px;
+  color: #d51b51;
+  border-bottom: 1px solid #d51b51;
+  cursor: pointer;
+}
+
+/* close */
+.register-dialog .dialog-close{
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  font-size: 0;
+  cursor: pointer;
+}
+.register-dialog .icon-close-white-14 {
+  background-position: -349px -207px!important;
+  width: 14px!important;
+  height: 14px!important;
+}
+.register-dialog .dialog-close::before{
+  content: '';
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+}
+
+
